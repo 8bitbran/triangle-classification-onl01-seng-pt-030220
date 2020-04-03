@@ -9,6 +9,8 @@ class Triangle
   
   def kind 
     triangle? 
-    
+    if @x == @y && @y == @x 
+      :equilateral 
+    elsif 
   end 
 end
