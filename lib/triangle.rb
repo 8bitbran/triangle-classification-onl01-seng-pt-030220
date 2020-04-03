@@ -13,7 +13,6 @@ class Triangle
   end 
   
   def kind 
-    triangle? 
     if @x == @y && @y == @z
       :equilateral 
     elsif @x == @y || @x == @z || @z == @y 
