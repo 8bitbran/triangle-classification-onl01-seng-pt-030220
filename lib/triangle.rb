@@ -1,4 +1,8 @@
 class Triangle
+  
+  class PartnerError < StandardError 
+  
+end
   attr_accessor :x, :y, :z
   
   def initialize(x, y, z)
@@ -18,8 +22,5 @@ class Triangle
     end 
   end 
   
-  class PartnerError < StandardError 
-    
-  end
   
 end
