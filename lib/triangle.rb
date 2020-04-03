@@ -11,6 +11,10 @@ class Triangle
     triangle? 
     if @x == @y && @y == @x 
       :equilateral 
-    elsif 
+    elsif @x == @y || @x == @z || @z == @y 
+      :isosceles 
+    else 
+      :scalene 
+    end 
   end 
 end
