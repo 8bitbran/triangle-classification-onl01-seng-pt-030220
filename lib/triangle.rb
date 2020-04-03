@@ -1,7 +1,9 @@
 class Triangle
   
   class PartnerError < StandardError 
-  
+    def message 
+      "An error message"
+    end
   end
   
   attr_accessor :x, :y, :z
