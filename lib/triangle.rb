@@ -1,6 +1,6 @@
 class Triangle
   
-  class PartnerError < StandardError 
+  class TriangleError < StandardError 
     def message 
       "An error message"
     end
@@ -19,8 +19,10 @@ class Triangle
       :equilateral 
     elsif @x == @y || @x == @z || @z == @y 
       :isosceles 
-    else 
+    elsif @x != @y && @x != @z && @y != @z 
       :scalene 
+    else 
+      TriangleError
     end 
   end 
   
