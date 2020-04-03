@@ -18,6 +18,8 @@ class Triangle
     end 
   end 
   
-  class
+  class PartnerError < StandardError 
+    
+  end
   
 end
