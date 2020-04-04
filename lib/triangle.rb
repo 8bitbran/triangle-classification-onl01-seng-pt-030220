@@ -22,11 +22,7 @@ class Triangle
     elsif @x != @y && @x != @z && @y != @z 
       :scalene 
     else
-      begin
-        raise Triangle::TriangleError
-      rescue Triangle::TriangleError => error
-          puts error.message
-      end
+      Triangle::TriangleError
     end 
   end 
   
