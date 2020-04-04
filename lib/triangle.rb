@@ -17,13 +17,12 @@ class Triangle
   def kind 
     if @x <= 0 || @y <= 0 || @z <= 0 
       raise TriangleError
-    if @x == @y && @y == @z
+    elsif @x == @y && @y == @z
       :equilateral 
     elsif @x == @y || @x == @z || @z == @y 
       :isosceles 
     elsif @x != @y && @x != @z && @y != @z 
       :scalene 
-    
     end 
   end 
   
