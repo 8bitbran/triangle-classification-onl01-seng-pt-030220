@@ -21,7 +21,7 @@ class Triangle
       :isosceles 
     elsif @x != @y && @x != @z && @y != @z 
       :scalene 
-    elsif @x < 0 || @y < 0 || @z < 0 
+    else
       begin
         raise TriangleError
       rescue TriangleError => error
