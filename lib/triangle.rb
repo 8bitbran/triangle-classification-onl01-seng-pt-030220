@@ -23,8 +23,8 @@ class Triangle
       :scalene 
     else
       begin
-        raise TriangleError
-      rescue TriangleError => error
+        raise Triangle::TriangleError
+      rescue Triangle::TriangleError => error
           puts error.message
       end
     end 
